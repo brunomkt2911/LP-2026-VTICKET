@@ -4,8 +4,8 @@ import { useEffect } from 'react';
 export default function PortfolioSection() {
   const videos = [
     {
-      id: '1151013194',
-      title: 'VÍDEO 9',
+      id: '1151247639', // Atualizado para o Vídeo 10
+      title: 'VÍDEO 10',
     },
     {
       id: '1151013491',
@@ -48,7 +48,7 @@ export default function PortfolioSection() {
             Vídeos que geram resultados
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Conteúdos otimizados para diversas nichos e segmentos.
+            Conteúdos otimizados para diversos nichos e segmentos.
           </p>
         </motion.div>
 
