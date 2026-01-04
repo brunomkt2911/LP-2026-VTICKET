@@ -11,7 +11,8 @@ export default function SolutionSection() {
     {
       icon: Zap,
       title: 'Entrega Rápida',
-      description: 'Receba seu pack em até 7 dias úteis. Agilidade que acompanha o ritmo do algoritmo.',
+      // ALTERADO AQUI: De 7 para 5 dias
+      description: 'Receba seu pack em até 5 dias úteis. Agilidade que acompanha o ritmo do algoritmo.',
     },
     {
       icon: DollarSign,
