@@ -16,7 +16,7 @@ export default function SolutionSection() {
     {
       icon: DollarSign,
       title: 'Preço Fixo',
-      description: 'R$ 804,00 por 15 vídeos. Apenas R$ 53,60 por vídeo. Investimento previsível e acessível.',
+      description: 'R$ 1.140,00 por 15 vídeos. Apenas R$ 76,00 por vídeo. Investimento previsível e acessível.',
     },
   ];
 
