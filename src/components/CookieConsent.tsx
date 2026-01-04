@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { X } from 'lucide-react'; // Certifique-se de ter o lucide-react instalado
+import { X } from 'lucide-react';
 
-const CookieConsent = () => {
+interface CookieConsentProps {
+  onOpenPrivacy?: () => void;
+}
+
+const CookieConsent = ({ onOpenPrivacy }: CookieConsentProps) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -27,9 +31,12 @@ const CookieConsent = () => {
           <p>
             Nós utilizamos cookies para melhorar sua experiência de navegação. 
             Ao continuar, você concorda com nossa{' '}
-            <a href="/privacidade" className="text-white underline hover:text-emerald-400 transition-colors">
+            <button 
+              onClick={onOpenPrivacy}
+              className="text-white underline hover:text-emerald-400 transition-colors bg-transparent border-none p-0 cursor-pointer inline"
+            >
               Política de Privacidade
-            </a>.
+            </button>.
           </p>
         </div>
 
