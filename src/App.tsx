@@ -6,6 +6,9 @@ import PortfolioSection from './components/PortfolioSection';
 import PricingSection from './components/PricingSection';
 import FAQSection from './components/FAQSection';
 import Footer from './components/Footer';
+// Importando os novos componentes estratégicos
+import StickyCTA from './components/StickyCTA';
+import CookieConsent from './components/CookieConsent'; 
 
 function App() {
   return (
@@ -18,6 +21,10 @@ function App() {
       <PricingSection />
       <FAQSection />
       <Footer />
+      
+      {/* Componentes Flutuantes (camada superior) */}
+      <StickyCTA />
+      <CookieConsent />
     </div>
   );
 }
