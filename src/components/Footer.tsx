@@ -1,13 +1,15 @@
-import { useState } from 'react'; // Adicionado useState
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, Mail } from 'lucide-react';
-import LegalModal from './LegalModals'; // Certifique-se que o caminho está certo
+import LegalModal from './LegalModal';     // Nome corrigido (Singular)
+import CookieConsent from './CookieConsent'; // Novo componente adicionado
 
 export default function Footer() {
   // Estado para controlar o Modal
   const [legalOpen, setLegalOpen] = useState(false);
   const [legalType, setLegalType] = useState<'privacy' | 'terms'>('terms');
 
+  // Função para abrir o modal (usada pelos botões do footer e pelo CookieConsent)
   const openLegal = (type: 'privacy' | 'terms') => {
     setLegalType(type);
     setLegalOpen(true);
@@ -59,19 +61,19 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">
-                © 2026 Owl Company. Todos os direitos reservados.
+                © {new Date().getFullYear()} Owl Rec. Todos os direitos reservados.
               </p>
 
               <div className="flex gap-6">
                 <button
                   onClick={() => openLegal('terms')}
-                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer"
+                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Termos de Uso
                 </button>
                 <button
                   onClick={() => openLegal('privacy')}
-                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer"
+                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Política de Privacidade
                 </button>
@@ -81,11 +83,16 @@ export default function Footer() {
         </div>
       </footer>
 
-      {/* Componente do Modal inserido aqui */}
+      {/* MODAL JURÍDICO */}
       <LegalModal 
         isOpen={legalOpen} 
         onClose={() => setLegalOpen(false)} 
         type={legalType} 
+      />
+
+      {/* AVISO DE COOKIES (Conectado ao Modal) */}
+      <CookieConsent 
+        onOpenPrivacy={() => openLegal('privacy')}
       />
     </>
   );
