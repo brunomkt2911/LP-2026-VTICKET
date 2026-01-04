@@ -31,9 +31,11 @@ export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
         <div className="space-y-4 text-gray-300">
           <p><strong>1. Aceitação:</strong> Ao contratar os serviços da Owl Rec, você concorda com estes termos.</p>
           <p><strong>2. Serviços:</strong> A Owl Rec compromete-se a entregar os vídeos conforme o pacote contratado, respeitando os prazos estabelecidos (5 dias úteis) após o recebimento de todo o material necessário.</p>
-          <p><strong>3. Pagamentos:</strong> O início da produção ocorre mediante a confirmação do pagamento acordado.</p>
-          <p><strong>4. Revisões:</strong> O cliente tem direito a 1 (uma) rodada completa de ajustes (refino estratégico). Alterações posteriores ou fora do escopo inicial poderão ser cobradas à parte.</p>
-          <p><strong>5. Propriedade Intelectual:</strong> O cliente mantém os direitos sobre sua imagem, concedendo à Owl Rec o direito de uso para portfólio, salvo solicitação expressa em contrário.</p>
+          <p><strong>3. Pagamentos:</strong> O início da produção ocorre exclusivamente mediante a confirmação do pagamento acordado.</p>
+          <p><strong>4. Revisões:</strong> O cliente tem direito a 1 (uma) rodada completa de ajustes (refino estratégico). Alterações posteriores ou fora do escopo inicial poderão ser cobradas à parte como horas extras de edição.</p>
+          <p><strong>5. Propriedade Intelectual:</strong> O cliente mantém os direitos sobre sua imagem, concedendo à Owl Rec o direito de uso para portfólio, salvo solicitação expressa em contrário por escrito.</p>
+          {/* CLÁUSULA NOVA DE PROTEÇÃO ABAIXO */}
+          <p><strong>6. Cancelamento e Reembolso:</strong> Por se tratar de um serviço que envolve reserva de agenda limitada e horas técnicas intelectuais, <strong>não realizamos reembolso integral após o início da fase de roteirização ou edição</strong>. Cancelamentos solicitados antes do início da produção estarão sujeitos a uma taxa administrativa de 20% para cobrir custos de reserva.</p>
         </div>
       )
     }
@@ -82,7 +84,7 @@ export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
               onClick={onClose}
               className="px-6 py-2 bg-green-400 text-gray-900 font-bold rounded-lg hover:bg-green-300 transition-colors"
             >
-              Entendido
+              Concordo
             </button>
           </div>
         </motion.div>
