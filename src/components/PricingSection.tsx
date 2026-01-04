@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion';
-import { Check, Sparkles } from 'lucide-react';
+import { Check, Sparkles, AlertCircle } from 'lucide-react';
 
 export default function PricingSection() {
   const features = [
     '15 vídeos profissionais',
     'Roteiro + Edição completa',
     'Legendas e trilha sonora',
-    'Entrega em até 7 dias úteis',
+    'Entrega ágil em até 5 dias úteis', // MANTIDO: Prazo ajustado
     '1 rodada de ajustes incluída',
     'Formato otimizado 9:16',
   ];
 
-  // Configuração do Pixel atualizada para o novo valor
+  // Configuração do Pixel
   const handlePurchaseClick = () => {
     // @ts-ignore
     if (typeof window !== 'undefined' && window.fbq) {
@@ -38,7 +38,7 @@ export default function PricingSection() {
             Investimento inteligente
           </h2>
           <p className="text-xl text-gray-300">
-            Qualidade de cinema, preço de freelancer iniciante.
+            Qualidade de cinema, orçamento otimizado.
           </p>
         </motion.div>
 
@@ -91,6 +91,12 @@ export default function PricingSection() {
               </motion.li>
             ))}
           </ul>
+          
+          {/* Sessão de Escassez (MANTIDA) */}
+          <div className="flex items-center justify-center gap-2 mb-4 text-orange-400 font-medium bg-orange-400/10 py-2 rounded-lg border border-orange-400/20">
+             <AlertCircle className="w-5 h-5" />
+             <span>Disponibilidade limitada: Apenas 2 vagas semanais</span>
+          </div>
 
           <motion.a
             onClick={handlePurchaseClick}
@@ -120,7 +126,7 @@ export default function PricingSection() {
             ✓ Garantia Owl Rec
           </p>
           <p className="text-gray-300">
-            Se não curtir a edição, ajustamos até ficar perfeita para o seu negócio.
+            Garantia Owl Rec: Incluímos 1 rodada completa de ajustes para o refino final do seu material.
           </p>
         </motion.div>
       </div>
