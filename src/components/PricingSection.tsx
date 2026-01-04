@@ -11,6 +11,19 @@ export default function PricingSection() {
     'Formato otimizado 9:16',
   ];
 
+  // Configuração do Pixel atualizada para o novo valor
+  const handlePurchaseClick = () => {
+    // @ts-ignore
+    if (typeof window !== 'undefined' && window.fbq) {
+      // @ts-ignore
+      window.fbq('track', 'Contact', {
+        content_name: 'Botão Preço - Pack R$ 1140',
+        currency: 'BRL',
+        value: 1140.00
+      });
+    }
+  };
+
   return (
     <section className="py-20 px-4 bg-gray-900/50">
       <div className="max-w-4xl mx-auto">
@@ -25,7 +38,7 @@ export default function PricingSection() {
             Investimento inteligente
           </h2>
           <p className="text-xl text-gray-300">
-            Menos que o preço de um almoço por vídeo.
+            Qualidade de cinema, preço de freelancer iniciante.
           </p>
         </motion.div>
 
@@ -39,25 +52,25 @@ export default function PricingSection() {
           <div className="flex items-center justify-center gap-2 mb-6">
             <Sparkles className="w-6 h-6 text-green-400" />
             <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">
-              Pack Completo
+              Pack Pro 15 Vídeos
             </span>
           </div>
 
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="text-gray-400 text-2xl line-through">R$ 1.200</span>
+              <span className="text-gray-400 text-2xl line-through">R$ 1.597</span>
               <span className="bg-green-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
-                -33%
+                ECONOMIZE R$ 457
               </span>
             </div>
             <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-              R$ 804<span className="text-2xl text-gray-400">,00</span>
+              R$ 1.140<span className="text-2xl text-gray-400">,00</span>
             </div>
             <p className="text-gray-300 text-lg mb-4">
-              ou <span className="text-green-400 font-semibold">12x de R$ 67,00</span>
+              ou <span className="text-green-400 font-semibold">12x de R$ 95,00</span>
             </p>
             <p className="text-green-400 font-semibold text-lg">
-              Apenas R$ 53,60 por vídeo
+              Apenas R$ 76,00 por vídeo
             </p>
           </div>
 
@@ -80,18 +93,19 @@ export default function PricingSection() {
           </ul>
 
           <motion.a
-            href="https://wa.me/5511934354900?text=Quero%20saber%20mais%20sobre%20o%20pacote%20de%2015%20v%C3%ADdeos!"
+            onClick={handlePurchaseClick}
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2015%20v%C3%ADdeos%20por%201140%20e%20quero%20aproveitar."
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="block w-full bg-green-400 text-gray-900 py-5 rounded-xl text-xl font-bold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/30 hover:shadow-green-400/50 text-center"
+            className="block w-full bg-green-400 text-gray-900 py-5 rounded-xl text-xl font-bold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/30 hover:shadow-green-400/50 text-center cursor-pointer"
           >
-            Quero dominar meu nicho agora
+            Quero garantir minha vaga
           </motion.a>
 
           <p className="text-center text-gray-400 text-sm mt-6">
-            🔒 Pagamento seguro e processamento imediato
+            🔒 Pagamento seguro e entrega garantida
           </p>
         </motion.div>
 
@@ -103,10 +117,10 @@ export default function PricingSection() {
           className="mt-8 bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center"
         >
           <p className="text-green-400 font-semibold text-lg mb-2">
-            ✓ Garantia de Satisfação
+            ✓ Garantia Owl Rec
           </p>
           <p className="text-gray-300">
-            Se não ficar satisfeito com a primeira entrega, fazemos os ajustes necessários sem custo adicional.
+            Se não curtir a edição, ajustamos até ficar perfeita para o seu negócio.
           </p>
         </motion.div>
       </div>
