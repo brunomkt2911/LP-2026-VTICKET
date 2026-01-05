@@ -33,7 +33,8 @@ export default function PainSection() {
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Você não precisa de cinema.
           </h2>
-          <p className="text-xl md:text-2xl text-green-400 font-semibold">
+          {/* MUDANÇA: Destaque em Laranja (Secondary) para quebrar o padrão e chamar atenção */}
+          <p className="text-xl md:text-2xl text-secondary font-semibold">
             Você precisa de presença.
           </p>
         </motion.div>
@@ -46,9 +47,11 @@ export default function PainSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-green-400/50 transition-colors"
+              // MUDANÇA: Hover da borda em Azul (Primary)
+              className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl border border-gray-700 hover:border-primary/50 transition-colors group"
             >
-              <pain.icon className="w-12 h-12 text-green-400 mb-4" />
+              {/* MUDANÇA: Ícones em Azul (Primary) */}
+              <pain.icon className="w-12 h-12 text-primary mb-4 group-hover:scale-110 transition-transform duration-300" />
               <h3 className="text-xl font-bold text-white mb-3">{pain.title}</h3>
               <p className="text-gray-300 leading-relaxed">{pain.description}</p>
             </motion.div>
