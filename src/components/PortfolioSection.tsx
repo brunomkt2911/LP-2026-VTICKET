@@ -62,10 +62,13 @@ export default function PortfolioSection() {
               transition={{ delay: index * 0.1, duration: 0.6 }}
               className="group"
             >
-              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-700 group-hover:border-green-400/50 transition-all bg-gray-800">
+              {/* MUDANÇA: Hover da borda agora é Primary (Azul Teal) */}
+              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-700 group-hover:border-primary/50 transition-all bg-gray-800">
                 <div style={{ paddingBottom: '177.78%', position: 'relative', width: '100%' }}>
                   <iframe
-                    src={`https://player.vimeo.com/video/${video.id}?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1`}
+                    src={`https://player.vimeo.com/video/${video.id}?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&muted=1`} 
+                    // DICA DE OURO: Mudei autoplay=1 para autoplay=0 (ou deixe 1 com muted=1)
+                    // Se deixar 4 vídeos dando autoplay ao mesmo tempo, o site trava no celular.
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
