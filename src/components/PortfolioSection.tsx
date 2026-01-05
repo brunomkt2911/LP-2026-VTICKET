@@ -42,7 +42,7 @@ export default function PortfolioSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Vídeos que geram resultados
@@ -52,7 +52,11 @@ export default function PortfolioSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* ALTERAÇÃO TÁTICA:
+           - Mobile: flex + overflow-x-auto (Vira carrossel)
+           - Desktop: md:grid (Vira grade normal)
+        */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:pb-0 scrollbar-hide">
           {videos.map((video, index) => (
             <motion.div
               key={index}
@@ -60,15 +64,13 @@ export default function PortfolioSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              className="group"
+              // MUDANÇA: min-w-[85vw] no mobile força o card a ocupar quase toda a tela, incentivando o scroll lateral
+              className="group min-w-[85vw] md:min-w-0 snap-center"
             >
-              {/* MUDANÇA: Hover da borda agora é Primary (Azul Teal) */}
-              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-700 group-hover:border-primary/50 transition-all bg-gray-800">
+              <div className="relative w-full rounded-2xl overflow-hidden border border-gray-700 group-hover:border-primary/50 transition-all bg-gray-800 shadow-xl">
                 <div style={{ paddingBottom: '177.78%', position: 'relative', width: '100%' }}>
                   <iframe
                     src={`https://player.vimeo.com/video/${video.id}?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&muted=1`} 
-                    // DICA DE OURO: Mudei autoplay=1 para autoplay=0 (ou deixe 1 com muted=1)
-                    // Se deixar 4 vídeos dando autoplay ao mesmo tempo, o site trava no celular.
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
@@ -87,6 +89,11 @@ export default function PortfolioSection() {
             </motion.div>
           ))}
         </div>
+        
+        {/* Dica visual para o usuário saber que pode arrastar (só aparece no mobile) */}
+        <p className="md:hidden text-center text-gray-500 text-sm mt-4 animate-pulse">
+           ← Arraste para o lado para ver mais →
+        </p>
       </div>
     </section>
   );
