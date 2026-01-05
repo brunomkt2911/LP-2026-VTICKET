@@ -6,7 +6,7 @@ export default function PricingSection() {
     '15 vídeos profissionais',
     'Roteiro + Edição completa',
     'Legendas e trilha sonora',
-    'Entrega ágil em até 5 dias úteis', // MANTIDO: Prazo ajustado
+    'Entrega ágil em até 5 dias úteis',
     '1 rodada de ajustes incluída',
     'Formato otimizado 9:16',
   ];
@@ -47,11 +47,13 @@ export default function PricingSection() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="bg-gradient-to-br from-green-400/10 via-transparent to-green-400/5 p-8 md:p-12 rounded-2xl border-2 border-green-400/50 shadow-2xl shadow-green-400/10"
+          // MUDANÇA: Gradiente e Borda em Azul (Primary)
+          className="bg-gradient-to-br from-primary/10 via-transparent to-primary/5 p-8 md:p-12 rounded-2xl border-2 border-primary/50 shadow-2xl shadow-primary/10"
         >
           <div className="flex items-center justify-center gap-2 mb-6">
-            <Sparkles className="w-6 h-6 text-green-400" />
-            <span className="text-green-400 font-semibold text-sm uppercase tracking-wider">
+            {/* MUDANÇA: Ícone Laranja (Secondary) para brilhar */}
+            <Sparkles className="w-6 h-6 text-secondary" />
+            <span className="text-primary font-semibold text-sm uppercase tracking-wider">
               Pack Pro 15 Vídeos
             </span>
           </div>
@@ -59,7 +61,8 @@ export default function PricingSection() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-gray-400 text-2xl line-through">R$ 1.597</span>
-              <span className="bg-green-400 text-gray-900 px-3 py-1 rounded-full text-sm font-bold">
+              {/* MUDANÇA: Tag de Economia em Laranja (Secondary) para estourar na tela */}
+              <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg shadow-secondary/20">
                 ECONOMIZE R$ 457
               </span>
             </div>
@@ -67,9 +70,10 @@ export default function PricingSection() {
               R$ 1.140<span className="text-2xl text-gray-400">,00</span>
             </div>
             <p className="text-gray-300 text-lg mb-4">
-              ou <span className="text-green-400 font-semibold">12x de R$ 95,00</span>
+              ou <span className="text-primary font-bold">12x de R$ 95,00</span>
             </p>
-            <p className="text-green-400 font-semibold text-lg">
+            {/* MUDANÇA: Destaque do valor unitário em Laranja */}
+            <p className="text-secondary font-semibold text-lg">
               Apenas R$ 76,00 por vídeo
             </p>
           </div>
@@ -84,16 +88,17 @@ export default function PricingSection() {
                 transition={{ delay: index * 0.1, duration: 0.4 }}
                 className="flex items-center gap-3"
               >
-                <div className="bg-green-400 rounded-full p-1 flex-shrink-0">
-                  <Check className="w-4 h-4 text-gray-900" />
+                {/* MUDANÇA: Check em Azul (Primary) */}
+                <div className="bg-primary rounded-full p-1 flex-shrink-0">
+                  <Check className="w-4 h-4 text-white" />
                 </div>
                 <span className="text-gray-200 text-lg">{feature}</span>
               </motion.li>
             ))}
           </ul>
-          
-          {/* Sessão de Escassez (MANTIDA) */}
-          <div className="flex items-center justify-center gap-2 mb-4 text-orange-400 font-medium bg-orange-400/10 py-2 rounded-lg border border-orange-400/20">
+           
+          {/* Sessão de Escassez (Secondary/Laranja) */}
+          <div className="flex items-center justify-center gap-2 mb-4 text-secondary font-medium bg-secondary/10 py-2 rounded-lg border border-secondary/20">
              <AlertCircle className="w-5 h-5" />
              <span>Disponibilidade limitada: Apenas 2 vagas semanais</span>
           </div>
@@ -105,7 +110,8 @@ export default function PricingSection() {
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
-            className="block w-full bg-green-400 text-gray-900 py-5 rounded-xl text-xl font-bold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/30 hover:shadow-green-400/50 text-center cursor-pointer"
+            // MUDANÇA: Botão Principal em Azul (Primary) com sombra azul
+            className="block w-full bg-primary text-white py-5 rounded-xl text-xl font-bold hover:bg-primary-hover transition-colors shadow-lg shadow-primary/30 hover:shadow-primary/50 text-center cursor-pointer"
           >
             Quero garantir minha vaga
           </motion.a>
@@ -122,7 +128,8 @@ export default function PricingSection() {
           transition={{ delay: 0.3, duration: 0.6 }}
           className="mt-8 bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center"
         >
-          <p className="text-green-400 font-semibold text-lg mb-2">
+          {/* MUDANÇA: Título da garantia em Azul */}
+          <p className="text-primary font-semibold text-lg mb-2">
             ✓ Garantia Owl Rec
           </p>
           <p className="text-gray-300">
