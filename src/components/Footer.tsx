@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, Mail } from 'lucide-react';
-import LegalModal from './LegalModal';     // Nome corrigido (Singular)
-import CookieConsent from './CookieConsent'; // Novo componente adicionado
+import LegalModal from './LegalModal';     
+import CookieConsent from './CookieConsent'; 
 
 export default function Footer() {
   // Estado para controlar o Modal
   const [legalOpen, setLegalOpen] = useState(false);
   const [legalType, setLegalType] = useState<'privacy' | 'terms'>('terms');
 
-  // Função para abrir o modal (usada pelos botões do footer e pelo CookieConsent)
+  // Função para abrir o modal
   const openLegal = (type: 'privacy' | 'terms') => {
     setLegalType(type);
     setLegalOpen(true);
@@ -40,7 +40,8 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 bg-green-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-green-300 transition-colors cursor-pointer"
+                // MUDANÇA AQUI: bg-primary (Azul) e text-white
+                className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5" />
                 WhatsApp
@@ -50,7 +51,8 @@ export default function Footer() {
                 href="mailto:contato@owlcompany.com"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold border border-gray-700 hover:border-green-400/50 transition-colors cursor-pointer"
+                // MUDANÇA AQUI: hover da borda com a cor primária
+                className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold border border-gray-700 hover:border-primary/50 transition-colors cursor-pointer"
               >
                 <Mail className="w-5 h-5" />
                 Email
@@ -67,13 +69,15 @@ export default function Footer() {
               <div className="flex gap-6">
                 <button
                   onClick={() => openLegal('terms')}
-                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer bg-transparent border-none"
+                  // MUDANÇA AQUI: hover:text-secondary (Laranja) para destaque nos detalhes
+                  className="text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Termos de Uso
                 </button>
                 <button
                   onClick={() => openLegal('privacy')}
-                  className="text-gray-400 hover:text-green-400 transition-colors text-sm cursor-pointer bg-transparent border-none"
+                  // MUDANÇA AQUI: hover:text-secondary (Laranja)
+                  className="text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Política de Privacidade
                 </button>
@@ -90,7 +94,7 @@ export default function Footer() {
         type={legalType} 
       />
 
-      {/* AVISO DE COOKIES (Conectado ao Modal) */}
+      {/* AVISO DE COOKIES */}
       <CookieConsent 
         onOpenPrivacy={() => openLegal('privacy')}
       />
