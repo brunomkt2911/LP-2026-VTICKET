@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-10 md:mb-16"
         >
           {/* BRINCADEIRA: Aspas flutuando em Laranja (Secondary) */}
           <div className="flex justify-center mb-4">
@@ -68,7 +68,12 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        {/* LÓGICA DO CARROSSEL MOBILE:
+            - flex + overflow-x-auto: Permite rolagem lateral
+            - snap-x: Faz o scroll "travar" no card certinho
+            - scrollbar-hide: Esconde a barra de rolagem feia (se configurado no CSS global, senão não atrapalha)
+        */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-3 md:gap-8 md:pb-0 scrollbar-hide">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
@@ -77,8 +82,8 @@ export default function TestimonialsSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
               whileHover={{ y: -10 }} 
-              // Card com borda sutil que brilha Laranja no hover
-              className="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-secondary/50 transition-colors shadow-xl flex flex-col"
+              // min-w-[85vw] força largura fixa no mobile para ativar o scroll
+              className="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-secondary/50 transition-colors shadow-xl flex flex-col min-w-[85vw] md:min-w-0 snap-center"
             >
               {/* Cabeçalho do Card */}
               <div className="flex justify-between items-start mb-4">
@@ -123,6 +128,11 @@ export default function TestimonialsSection() {
             </motion.div>
           ))}
         </div>
+        
+        {/* Dica visual para mobile */}
+        <p className="md:hidden text-center text-gray-500 text-sm mt-4 animate-pulse">
+           ← Deslize para ver mais depoimentos →
+        </p>
       </div>
     </section>
   );
