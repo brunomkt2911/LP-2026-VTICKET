@@ -17,7 +17,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-green-500/5 to-transparent"></div>
+      {/* MUDANÇA: Gradiente de fundo agora usa a cor primária (Teal/Azul) */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/10 to-transparent"></div>
 
       <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <motion.div
@@ -33,7 +34,8 @@ export default function Hero() {
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight"
           >
             Constância Vende Mais que{' '}
-            <span className="text-green-400">Perfeição.</span>
+            {/* MUDANÇA: "Perfeição" em Laranja (Secondary) para contraste cinematográfico */}
+            <span className="text-secondary">Perfeição.</span>
           </motion.h1>
 
           <motion.p
@@ -55,7 +57,8 @@ export default function Hero() {
             transition={{ delay: 0.6, duration: 0.8 }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block bg-green-400 text-gray-900 px-8 py-4 rounded-lg text-lg font-bold hover:bg-green-300 transition-colors shadow-lg shadow-green-400/50 cursor-pointer"
+            // MUDANÇA: Botão Azul (Primary), Texto Branco e Sombra Azul
+            className="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-hover transition-colors shadow-lg shadow-primary/50 cursor-pointer"
           >
             Garantir meus 15 vídeos por R$ 1.140
           </motion.a>
