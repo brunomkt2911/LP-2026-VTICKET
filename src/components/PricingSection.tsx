@@ -4,22 +4,22 @@ import { Check, Sparkles, AlertCircle } from 'lucide-react';
 export default function PricingSection() {
   const features = [
     '15 vídeos profissionais',
-    'Edição completa', // MUDANÇA AQUI: Removido "Roteiro + "
+    'Edição completa', 
     'Legendas e trilha sonora',
     'Entrega ágil em até 5 dias úteis',
     '1 rodada de ajustes incluída',
     'Formato otimizado 9:16',
   ];
 
-  // Configuração do Pixel
+  // Configuração do Pixel Atualizada para R$ 1240
   const handlePurchaseClick = () => {
     // @ts-ignore
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Botão Preço - Pack R$ 1140',
+        content_name: 'Botão Preço - Pack R$ 1240',
         currency: 'BRL',
-        value: 1140.00
+        value: 1240.00
       });
     }
   };
@@ -60,17 +60,17 @@ export default function PricingSection() {
             <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-gray-400 text-2xl line-through">R$ 1.597</span>
               <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg shadow-secondary/20">
-                ECONOMIZE R$ 457
+                ECONOMIZE R$ 357
               </span>
             </div>
             <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-              R$ 1.140<span className="text-2xl text-gray-400">,00</span>
+              R$ 1.240<span className="text-2xl text-gray-400">,00</span>
             </div>
             <p className="text-gray-300 text-lg mb-4">
-              ou <span className="text-primary font-bold">12x de R$ 95,00</span>
+              ou <span className="text-primary font-bold">12x de R$ 103,33</span>
             </p>
             <p className="text-secondary font-semibold text-lg">
-              Apenas R$ 76,00 por vídeo
+              Apenas R$ 82,67 por vídeo
             </p>
           </div>
 
@@ -91,15 +91,15 @@ export default function PricingSection() {
               </motion.li>
             ))}
           </ul>
-           
+            
           <div className="flex items-center justify-center gap-2 mb-4 text-secondary font-medium bg-secondary/10 py-2 rounded-lg border border-secondary/20">
-             <AlertCircle className="w-5 h-5" />
-             <span>Disponibilidade limitada: Apenas 2 vagas semanais</span>
+              <AlertCircle className="w-5 h-5" />
+              <span>Disponibilidade limitada: Apenas 2 vagas semanais</span>
           </div>
 
           <motion.a
             onClick={handlePurchaseClick}
-            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2015%20v%C3%ADdeos%20por%201140%20e%20quero%20aproveitar."
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2015%20v%C3%ADdeos%20por%201240%20e%20quero%20aproveitar."
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
