@@ -35,12 +35,12 @@ export default function Footer() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                href="https://wa.me/5511934354900?text=Quero%20saber%20mais%20sobre%20o%20pacote%20de%2015%20v%C3%ADdeos!"
+                // ATUALIZADO: Texto do WhatsApp agora reflete o novo valor de R$ 1.240
+                href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2015%20v%C3%ADdeos%20por%201240."
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                // MUDANÇA AQUI: bg-primary (Azul) e text-white
                 className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors cursor-pointer"
               >
                 <MessageCircle className="w-5 h-5" />
@@ -48,10 +48,10 @@ export default function Footer() {
               </motion.a>
 
               <motion.a
-                href="mailto:contato@owlcompany.com"
+                // ATUALIZADO: E-mail oficial brunolimafilms.com.br
+                href="mailto:contato@brunolimafilms.com.br"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                // MUDANÇA AQUI: hover da borda com a cor primária
                 className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg font-semibold border border-gray-700 hover:border-primary/50 transition-colors cursor-pointer"
               >
                 <Mail className="w-5 h-5" />
@@ -63,20 +63,18 @@ export default function Footer() {
           <div className="border-t border-gray-800 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-gray-400 text-sm">
-                © {new Date().getFullYear()} Owl Rec. Todos os direitos reservados.
+                © {new Date().getFullYear()} Owl Company. Todos os direitos reservados.
               </p>
 
               <div className="flex gap-6">
                 <button
                   onClick={() => openLegal('terms')}
-                  // MUDANÇA AQUI: hover:text-secondary (Laranja) para destaque nos detalhes
                   className="text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Termos de Uso
                 </button>
                 <button
                   onClick={() => openLegal('privacy')}
-                  // MUDANÇA AQUI: hover:text-secondary (Laranja)
                   className="text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer bg-transparent border-none"
                 >
                   Política de Privacidade
