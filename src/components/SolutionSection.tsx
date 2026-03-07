@@ -16,7 +16,8 @@ export default function SolutionSection() {
     {
       icon: DollarSign,
       title: 'Preço Fixo',
-      description: 'R$ 1.140,00 por 15 vídeos. Apenas R$ 76,00 por vídeo. Investimento previsível e acessível.',
+      // ATUALIZADO: Valor total para R$ 1.240,00 e valor por vídeo para R$ 82,67
+      description: 'R$ 1.240,00 por 15 vídeos. Apenas R$ 82,67 por vídeo. Investimento previsível e acessível.',
     },
   ];
 
@@ -46,12 +47,9 @@ export default function SolutionSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
-              // MUDANÇA: Fundo e Borda em Azul (Primary) para estrutura
               className="bg-gradient-to-br from-primary/10 to-transparent p-8 rounded-xl border border-primary/30 hover:border-primary transition-all hover:shadow-lg hover:shadow-primary/20 group"
             >
-              {/* MUDANÇA: Fundo do ícone Laranja suave (Secondary/10) */}
               <div className="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                {/* MUDANÇA: Ícone Laranja (Secondary) para estourar o contraste */}
                 <benefit.icon className="w-8 h-8 text-secondary" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-3">{benefit.title}</h3>
