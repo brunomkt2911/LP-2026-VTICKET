@@ -7,9 +7,9 @@ export default function Hero() {
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Botão Hero - Pack R$ 1140',
+        content_name: 'Botão Hero - Pack R$ 1240',
         currency: 'BRL',
-        value: 1140.00
+        value: 1240.00
       });
     }
   };
@@ -59,7 +59,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-hover transition-colors shadow-lg shadow-primary/50 cursor-pointer"
           >
-            Garantir meus 15 vídeos por R$ 1.140
+            Garantir meus 15 vídeos por R$ 1.240
           </motion.a>
         </motion.div>
 
@@ -75,7 +75,6 @@ export default function Hero() {
              <div className="absolute -inset-4 bg-secondary/30 blur-3xl -z-10 rounded-full opacity-70 animate-pulse"></div>
 
              {/* Container do Vídeo */}
-             {/* MUDANÇA: shadow-secondary (Laranja) */}
              <div className="relative w-[300px] aspect-[9/16] rounded-2xl overflow-hidden shadow-2xl shadow-secondary/20 border border-white/10 bg-black">
               <div style={{ position: 'relative', width: '100%', height: '100%' }}>
                 <iframe
