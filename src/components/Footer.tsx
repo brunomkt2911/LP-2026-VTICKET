@@ -27,28 +27,27 @@ export default function Footer() {
             className="text-center mb-12"
           >
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Pronto para ter presença constante nas redes?
+              Pronto para dominar as redes com alta qualidade?
             </h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Entre em contato e comece a construir sua audiência com vídeos que vendem.
+              Garanta sua vaga na agenda deste mês. 10 vídeos comerciais estratégicos para vender todos os dias.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
-                // ATUALIZADO: Texto do WhatsApp agora reflete o novo valor de R$ 1.240
-                href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2015%20v%C3%ADdeos%20por%201240."
+                // TEXTO DO WHATSAPP ATUALIZADO PARA O NOVO TICKET
+                href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%ADdeos%20por%201240."
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors cursor-pointer"
+                className="flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-primary-hover transition-colors cursor-pointer shadow-lg shadow-primary/20"
               >
                 <MessageCircle className="w-5 h-5" />
-                WhatsApp
+                Agendar Reunião
               </motion.a>
 
               <motion.a
-                // ATUALIZADO: E-mail oficial brunolimafilms.com.br
                 href="mailto:contato@brunolimafilms.com.br"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
