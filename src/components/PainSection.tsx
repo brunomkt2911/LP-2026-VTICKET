@@ -6,17 +6,17 @@ export default function PainSection() {
     {
       icon: Clock,
       title: 'Editar leva tempo',
-      description: 'Você tem um negócio pra tocar. Passar horas no CapCut não é produtivo.',
+      description: 'Você tem um negócio pra tocar. Passar horas no CapCut não é produtivo e custa o seu tempo.',
     },
     {
       icon: DollarSign,
       title: 'Agências são caras',
-      description: 'R$ 100-200 por vídeo é inviável para quem está começando ou crescendo.',
+      description: 'R$ 200 a R$ 400 por vídeo é o padrão do mercado. Inviável para quem precisa de volume e constância.',
     },
     {
       icon: TrendingUp,
       title: 'O algoritmo premia frequência',
-      description: 'Um vídeo perfeito por mês não vence 15 vídeos bons no mesmo período.',
+      description: 'Um vídeo perfeito por mês não vence 10 vídeos comerciais muito bem feitos no mesmo período.',
     },
   ];
 
