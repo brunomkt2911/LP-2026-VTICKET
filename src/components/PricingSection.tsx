@@ -3,12 +3,12 @@ import { Check, Sparkles, AlertCircle } from 'lucide-react';
 
 export default function PricingSection() {
   const features = [
-    '15 vídeos profissionais',
-    'Edição completa', 
-    'Legendas e trilha sonora',
+    '10 vídeos profissionais',
+    'Edição completa com cortes dinâmicos', 
+    'Legendas animadas e trilha sonora',
     'Entrega ágil em até 5 dias úteis',
     '1 rodada de ajustes incluída',
-    'Formato otimizado 9:16',
+    'Formato otimizado 9:16 (Reels/TikTok/Shorts)',
   ];
 
   // Configuração do Pixel Atualizada para R$ 1240
@@ -17,7 +17,7 @@ export default function PricingSection() {
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Botão Preço - Pack R$ 1240',
+        content_name: 'Botão Preço - Pack 10 Vídeos R$ 1240',
         currency: 'BRL',
         value: 1240.00
       });
@@ -38,7 +38,7 @@ export default function PricingSection() {
             Investimento inteligente
           </h2>
           <p className="text-xl text-gray-300">
-            Qualidade de cinema, orçamento otimizado.
+            Qualidade premium, volume constante e orçamento otimizado.
           </p>
         </motion.div>
 
@@ -52,7 +52,7 @@ export default function PricingSection() {
           <div className="flex items-center justify-center gap-2 mb-6">
             <Sparkles className="w-6 h-6 text-secondary" />
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              Pack Pro 15 Vídeos
+              Pack Essencial 10 Vídeos
             </span>
           </div>
 
@@ -70,7 +70,7 @@ export default function PricingSection() {
               ou <span className="text-primary font-bold">12x de R$ 103,33</span>
             </p>
             <p className="text-secondary font-semibold text-lg">
-              Apenas R$ 82,67 por vídeo
+              Apenas R$ 124,00 por vídeo
             </p>
           </div>
 
@@ -99,7 +99,7 @@ export default function PricingSection() {
 
           <motion.a
             onClick={handlePurchaseClick}
-            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2015%20v%C3%ADdeos%20por%201240%20e%20quero%20aproveitar."
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2010%20v%C3%ADdeos%20por%201240%20e%20quero%20aproveitar."
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
