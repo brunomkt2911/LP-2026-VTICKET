@@ -5,7 +5,7 @@ export default function SolutionSection() {
   const benefits = [
     {
       icon: Video,
-      title: '15 Vídeos Completos',
+      title: '10 Vídeos Completos',
       description: 'Roteirizados, editados e prontos para postar. Volume que mantém sua audiência engajada.',
     },
     {
@@ -16,8 +16,8 @@ export default function SolutionSection() {
     {
       icon: DollarSign,
       title: 'Preço Fixo',
-      // ATUALIZADO: Valor total para R$ 1.240,00 e valor por vídeo para R$ 82,67
-      description: 'R$ 1.240,00 por 15 vídeos. Apenas R$ 82,67 por vídeo. Investimento previsível e acessível.',
+      // ATUALIZADO: Valor total para R$ 1.240,00 e valor por vídeo para R$ 124,00
+      description: 'R$ 1.240,00 por 10 vídeos. Apenas R$ 124,00 por vídeo. Investimento previsível e acessível.',
     },
   ];
 
@@ -32,7 +32,7 @@ export default function SolutionSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            O Pack 15: Sua solução completa
+            O Pack 10: Sua solução completa
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
             Tudo o que você precisa para dominar as redes sociais com frequência e qualidade.
