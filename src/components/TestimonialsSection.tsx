@@ -25,6 +25,13 @@ export default function TestimonialsSection() {
       highlight: 'Marca Reposicionada',
       quote: 'Minha primeira experiência contratando videomaker e foi a melhor possível. Reposicionou totalmente nossa marca no Instagram.',
     },
+    {
+      id: '1194509641', // 🔥 SEU NOVO DEPOIMENTO AQUI: Cheff Flávio
+      name: 'Cheff Flávio',
+      role: 'Gastronomia',
+      highlight: 'Qualidade Cinematográfica', // Edite essa frase de destaque se quiser
+      quote: 'Um trabalho de altíssimo nível que elevou o padrão visual do nosso conteúdo. Profissionalismo e resultado impressionante.', // Edite o texto do depoimento dele aqui
+    },
   ];
 
   // Script do Vimeo para garantir performance
@@ -50,7 +57,7 @@ export default function TestimonialsSection() {
           transition={{ duration: 0.6 }}
           className="text-center mb-10 md:mb-16"
         >
-          {/* BRINCADEIRA: Aspas flutuando em Laranja (Secondary) */}
+          {/* Aspas flutuando em Laranja (Secondary) */}
           <div className="flex justify-center mb-4">
              <motion.div
                animate={{ y: [0, -10, 0] }}
@@ -68,12 +75,8 @@ export default function TestimonialsSection() {
           </p>
         </motion.div>
 
-        {/* LÓGICA DO CARROSSEL MOBILE:
-            - flex + overflow-x-auto: Permite rolagem lateral
-            - snap-x: Faz o scroll "travar" no card certinho
-            - scrollbar-hide: Esconde a barra de rolagem feia (se configurado no CSS global, senão não atrapalha)
-        */}
-        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-3 md:gap-8 md:pb-0 scrollbar-hide">
+        {/* LÓGICA DO CARROSSEL MOBILE E GRID DESKTOP AJUSTADA PARA 4 COLUNAS */}
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 pb-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 md:pb-0 scrollbar-hide">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
@@ -82,7 +85,6 @@ export default function TestimonialsSection() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.2, duration: 0.6 }}
               whileHover={{ y: -10 }} 
-              // min-w-[85vw] força largura fixa no mobile para ativar o scroll
               className="bg-gray-800 rounded-2xl p-6 border border-gray-700 hover:border-secondary/50 transition-colors shadow-xl flex flex-col min-w-[85vw] md:min-w-0 snap-center"
             >
               {/* Cabeçalho do Card */}
@@ -106,10 +108,9 @@ export default function TestimonialsSection() {
                 </div>
               </div>
 
-              {/* Player de Vídeo (Estilo Stories Vertical) */}
+              {/* Player de Vídeo */}
               <div className="relative w-full rounded-xl overflow-hidden bg-black aspect-[9/16] mb-4 border border-gray-700 shadow-inner group">
                  <iframe
-                    // ATENÇÃO: Autoplay=0 para não travar o celular do cliente com 3 vídeos rodando
                     src={`https://player.vimeo.com/video/${item.id}?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&muted=0`}
                     frameBorder="0"
                     allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
