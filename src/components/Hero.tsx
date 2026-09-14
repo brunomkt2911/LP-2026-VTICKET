@@ -7,9 +7,9 @@ export default function Hero() {
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Botão Hero - Pack 10 Vídeos R$ 1240',
+        content_name: 'Botão Hero - Pack 10 Vídeos R$ 699',
         currency: 'BRL',
-        value: 1240.00
+        value: 699.00
       });
     }
   };
@@ -44,12 +44,12 @@ export default function Hero() {
             transition={{ delay: 0.4, duration: 0.8 }}
             className="text-xl md:text-2xl text-gray-300 mb-8"
           >
-            Tenha 10 vídeos profissionais para postar e engajar durante o mês inteiro. O volume e a qualidade que você precisa, sem dor de cabeça.
+            Tenha 10 vídeos profissionais para postar e engajar durante o mês inteiro. O volume e a qualidade que você precisa, com entrega em até 96h.
           </motion.p>
 
           <motion.a
             onClick={handleHeroClick}
-            href="https://wa.me/5511934354900?text=Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%ADdeos%20por%201240!"
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%addeos%20por%20699!"
             target="_blank"
             rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,7 @@ export default function Hero() {
             whileTap={{ scale: 0.95 }}
             className="inline-block bg-primary text-white px-8 py-4 rounded-lg text-lg font-bold hover:bg-primary-hover transition-colors shadow-lg shadow-primary/50 cursor-pointer"
           >
-            Garantir 10 Vídeos por R$ 1.240
+            Garantir 10 Vídeos por 10x de R$ 69,90
           </motion.a>
         </motion.div>
 
