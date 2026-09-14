@@ -34,7 +34,7 @@ export default function ScopeSection() {
             O que é Edição Ágil?
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Transparência total: o foco é retenção e clareza, não efeitos especiais.
+            Transparência total: o foco é retenção, clareza e entrega em até 96h, não efeitos especiais.
           </p>
         </motion.div>
 
@@ -99,7 +99,7 @@ export default function ScopeSection() {
         >
           <p className="text-gray-300 text-lg leading-relaxed">
             {/* MUDANÇA: Texto "Nota importante" em Laranja */}
-            <span className="text-secondary font-semibold">Nota importante:</span> Nosso foco é criar vídeos que seguram atenção e comunicam sua mensagem com clareza. Se você busca produções cinematográficas com efeitos hollywoodianos, este não é o pack ideal. Aqui você ganha volume, velocidade e resultados.
+            <span className="text-secondary font-semibold">Nota importante:</span> Nosso foco é criar vídeos que seguram atenção e comunicam sua mensagem com clareza. Se você busca produções cinematográficas com efeitos hollywoodianos, este não é o pack ideal. Aqui você ganha volume, velocidade e resultados com preço acessível.
           </p>
         </motion.div>
       </div>
