@@ -6,20 +6,20 @@ export default function PricingSection() {
     '10 vídeos profissionais',
     'Edição completa com cortes dinâmicos', 
     'Legendas animadas e trilha sonora',
-    'Entrega ágil em até 5 dias úteis',
+    'Entrega ágil em até 96h',
     '1 rodada de ajustes incluída',
     'Formato otimizado 9:16 (Reels/TikTok/Shorts)',
   ];
 
-  // Configuração do Pixel Atualizada para R$ 1240
+  // Configuração do Pixel Atualizada para R$ 699
   const handlePurchaseClick = () => {
     // @ts-ignore
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Botão Preço - Pack 10 Vídeos R$ 1240',
+        content_name: 'Botão Preço - Pack 10 Vídeos R$ 699',
         currency: 'BRL',
-        value: 1240.00
+        value: 699.00
       });
     }
   };
@@ -52,25 +52,25 @@ export default function PricingSection() {
           <div className="flex items-center justify-center gap-2 mb-6">
             <Sparkles className="w-6 h-6 text-secondary" />
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              Pack Essencial 10 Vídeos
+              Pack Ágil 10 Vídeos
             </span>
           </div>
 
           <div className="text-center mb-8">
             <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="text-gray-400 text-2xl line-through">R$ 1.597</span>
+              <span className="text-gray-400 text-2xl line-through">R$ 1.140</span>
               <span className="bg-secondary text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg shadow-secondary/20">
-                ECONOMIZE R$ 357
+                ECONOMIZE R$ 441
               </span>
             </div>
             <div className="text-5xl md:text-6xl font-bold text-white mb-2">
-              R$ 1.240<span className="text-2xl text-gray-400">,00</span>
+              R$ 699<span className="text-2xl text-gray-400">,00</span>
             </div>
             <p className="text-gray-300 text-lg mb-4">
-              ou <span className="text-primary font-bold">12x de R$ 103,33</span>
+              ou <span className="text-primary font-bold">10x de R$ 69,90</span>
             </p>
             <p className="text-secondary font-semibold text-lg">
-              Apenas R$ 124,00 por vídeo
+              Apenas R$ 69,90 por vídeo
             </p>
           </div>
 
@@ -94,12 +94,12 @@ export default function PricingSection() {
             
           <div className="flex items-center justify-center gap-2 mb-4 text-secondary font-medium bg-secondary/10 py-2 rounded-lg border border-secondary/20">
               <AlertCircle className="w-5 h-5" />
-              <span>Disponibilidade limitada: Apenas 2 vagas semanais</span>
+              <span>Disponibilidade limitada: Slots de edição abertos</span>
           </div>
 
           <motion.a
             onClick={handlePurchaseClick}
-            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2010%20v%C3%ADdeos%20por%201240%20e%20quero%20aproveitar."
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Vi%20a%20oferta%20do%20Pack%20de%2010%20v%C3%addeos%20por%20699%20e%20quero%20aproveitar."
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02 }}
@@ -122,10 +122,10 @@ export default function PricingSection() {
           className="mt-8 bg-gray-800/50 p-6 rounded-xl border border-gray-700 text-center"
         >
           <p className="text-primary font-semibold text-lg mb-2">
-            ✓ Garantia Owl Rec
+            ✓ Garantia Owl Company
           </p>
           <p className="text-gray-300">
-            Garantia Owl Rec: Incluímos 1 rodada completa de ajustes para o refino final do seu material.
+            Incluímos 1 rodada completa de ajustes simples para o refino final do seu material.
           </p>
         </motion.div>
       </div>
