@@ -26,11 +26,11 @@ export default function TestimonialsSection() {
       quote: 'Minha primeira experiência contratando videomaker e foi a melhor possível. Reposicionou totalmente nossa marca no Instagram.',
     },
     {
-      id: '1194509641', // 🔥 SEU NOVO DEPOIMENTO AQUI: Cheff Flávio
+      id: '1194509641', // Cheff Flávio
       name: 'Cheff Flávio',
       role: 'Gastronomia',
-      highlight: 'Qualidade Cinematográfica', // Edite essa frase de destaque se quiser
-      quote: 'Um trabalho de altíssimo nível que elevou o padrão visual do nosso conteúdo. Profissionalismo e resultado impressionante.', // Edite o texto do depoimento dele aqui
+      highlight: 'Qualidade Cinematográfica',
+      quote: 'Um trabalho de altíssimo nível que elevou o padrão visual do nosso conteúdo. Profissionalismo e resultado impressionante.',
     },
   ];
 
@@ -132,7 +132,7 @@ export default function TestimonialsSection() {
         
         {/* Dica visual para mobile */}
         <p className="md:hidden text-center text-gray-500 text-sm mt-4 animate-pulse">
-           ← Deslize para ver mais depoimentos →
+            ← Deslize para ver mais depoimentos →
         </p>
       </div>
     </section>
