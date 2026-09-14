@@ -36,7 +36,7 @@ export default function Footer() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <motion.a
                 // TEXTO DO WHATSAPP ATUALIZADO PARA O NOVO TICKET
-                href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%ADdeos%20por%201240."
+                href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%addeos%20por%20699."
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
