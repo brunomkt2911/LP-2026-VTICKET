@@ -9,12 +9,12 @@ export default function FAQSection() {
     {
       question: 'Como envio os arquivos?',
       answer:
-        'Após a confirmação do pagamento, você receberá um link para upload via Google Drive ou WeTransfer. Envie seus vídeos brutos, briefing e qualquer material de apoio. Nossa equipe fará o resto.',
+        'Como nosso processo inclui captação presencial na sua empresa ou negócio, nós mesmos realizamos todo o material bruto necessário durante a diária agendada.',
     },
     {
       question: 'Qual o prazo de entrega?',
       answer:
-        'O prazo padrão é de 5 dias úteis após a captação de todo o material. Para projetos urgentes, consulte disponibilidade de entrega expressa (taxa adicional pode ser aplicada).',
+        'O prazo padrão de entrega dos 10 Reels é de até 96 horas após a realização da captação.',
     },
     {
       question: 'Posso pedir alterações?',
@@ -24,7 +24,7 @@ export default function FAQSection() {
     {
       question: 'Preciso ter os vídeos gravados?',
       answer:
-        'não. Este pack é focado em captação edição ágil. Iremos marcar uma diária de até 4h para a captação dos vídeos.',
+        'Não. Este pack é focado em captação e edição ágil. Iremos marcar uma diária de até 4h para a captação dos vídeos no seu local.',
     },
     {
       question: 'Os vídeos funcionam para qualquer nicho?',
@@ -34,7 +34,7 @@ export default function FAQSection() {
     {
       question: 'Vocês criam o roteiro?',
       answer:
-        'Incluímos estruturação básica dos vídeos (início, meio, fim) e sugestões de headlines. Se você precisar de roteiros completos escritos do zero, consulte nossos pacotes de criação de conteúdo.',
+        'Incluímos estruturação básica dos vídeos (início, meio, fim) e sugestões de headlines focadas em retenção para a gravação.',
     },
   ];
 
