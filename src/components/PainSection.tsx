@@ -11,12 +11,12 @@ export default function PainSection() {
     {
       icon: DollarSign,
       title: 'Agências são caras',
-      description: 'R$ 200 a R$ 400 por vídeo é o padrão do mercado. Inviável para quem precisa de volume e constância.',
+      description: 'Valores absurdos por vídeo são o padrão do mercado. Inviável para quem precisa de volume, constância e ROI positivo.',
     },
     {
       icon: TrendingUp,
       title: 'O algoritmo premia frequência',
-      description: 'Um vídeo perfeito por mês não vence 10 vídeos comerciais muito bem feitos no mesmo período.',
+      description: 'Um vídeo perfeito por mês não vence 10 vídeos comerciais bem estruturados entregues com agilidade no mesmo período.',
     },
   ];
 
