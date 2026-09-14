@@ -6,18 +6,18 @@ export default function SolutionSection() {
     {
       icon: Video,
       title: '10 Vídeos Completos',
-      description: 'Roteirizados, editados e prontos para postar. Volume que mantém sua audiência engajada.',
+      description: 'Captação profissional, editados e prontos para postar. Volume que mantém sua audiência engajada.',
     },
     {
       icon: Zap,
       title: 'Entrega Rápida',
-      description: 'Receba seu pack em até 5 dias úteis. Agilidade que acompanha o ritmo do algoritmo.',
+      description: 'Receba seu pack em até 96h após a captação. Agilidade que acompanha o ritmo do algoritmo.',
     },
     {
       icon: DollarSign,
-      title: 'Preço Fixo',
-      // ATUALIZADO: Valor total para R$ 1.240,00 e valor por vídeo para R$ 124,00
-      description: 'R$ 1.240,00 por 10 vídeos. Apenas R$ 124,00 por vídeo. Investimento previsível e acessível.',
+      title: 'Preço Acessível',
+      // ATUALIZADO: Valor total para R$ 699,00 e valor por vídeo para R$ 69,90
+      description: 'R$ 699,00 por 10 vídeos ou 10x de R$ 69,90. Apenas R$ 69,90 por vídeo. Investimento previsível.',
     },
   ];
 
@@ -32,10 +32,10 @@ export default function SolutionSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            O Pack 10: Sua solução completa
+            O Pack Ágil: Sua solução completa
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Tudo o que você precisa para dominar as redes sociais com frequência e qualidade.
+            Tudo o que você precisa para dominar as redes sociais com frequência e qualidade, sem gastar uma fortuna.
           </p>
         </motion.div>
 
