@@ -16,7 +16,7 @@ export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
       icon: Shield,
       text: (
         <div className="space-y-4 text-gray-300">
-          <p><strong>1. Introdução:</strong> A Owl Rec valoriza a privacidade de seus usuários. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.</p>
+          <p><strong>1. Introdução:</strong> A Owl Company valoriza a privacidade de seus usuários. Esta política descreve como coletamos, usamos e protegemos suas informações pessoais.</p>
           <p><strong>2. Coleta de Dados:</strong> Coletamos informações fornecidas voluntariamente (como nome, e-mail e telefone) apenas para fins de contato comercial e processamento de pedidos.</p>
           <p><strong>3. Uso das Informações:</strong> Seus dados são utilizados exclusivamente para: (a) Prestação dos serviços contratados; (b) Comunicação sobre o andamento dos projetos; (c) Melhoria de nossos serviços.</p>
           <p><strong>4. Segurança:</strong> Implementamos medidas de segurança para proteger seus dados contra acesso não autorizado.</p>
@@ -29,13 +29,13 @@ export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
       icon: FileText,
       text: (
         <div className="space-y-4 text-gray-300">
-          <p><strong>1. Aceitação:</strong> Ao contratar os serviços da Owl Rec, você concorda com estes termos.</p>
-          <p><strong>2. Serviços:</strong> A Owl Rec compromete-se a entregar os vídeos conforme o pacote contratado, respeitando os prazos estabelecidos (5 dias úteis) após o recebimento de todo o material necessário.</p>
-          <p><strong>3. Pagamentos:</strong> O início da produção ocorre exclusivamente mediante a confirmação do pagamento acordado.</p>
-          <p><strong>4. Revisões:</strong> O cliente tem direito a 1 (uma) rodada completa de ajustes (refino estratégico). Alterações posteriores ou fora do escopo inicial poderão ser cobradas à parte como horas extras de edição.</p>
-          <p><strong>5. Propriedade Intelectual:</strong> O cliente mantém os direitos sobre sua imagem, concedendo à Owl Rec o direito de uso para portfólio, salvo solicitação expressa em contrário por escrito.</p>
-          {/* CLÁUSULA NOVA DE PROTEÇÃO ABAIXO */}
-          <p><strong>6. Cancelamento e Reembolso:</strong> Por se tratar de um serviço que envolve reserva de agenda limitada e horas técnicas intelectuais, <strong>não realizamos reembolso integral após o início da fase de roteirização ou edição</strong>. Cancelamentos solicitados antes do início da produção estarão sujeitos a uma taxa administrativa de 20% para cobrir custos de reserva.</p>
+          <p><strong>1. Aceitação:</strong> Ao contratar os serviços da Owl Company, você concorda com estes termos.</p>
+          <p><strong>2. Serviços:</strong> A Owl Company compromete-se a entregar os vídeos conforme o pacote contratado, respeitando o prazo estabelecido de até 96 horas após a realização da captação.</p>
+          <p><strong>3. Pagamentos:</strong> O início da produção ocorre exclusivamente mediante a confirmação do pagamento acordado ou da formalização da condição contratada.</p>
+          <p><strong>4. Revisões:</strong> O cliente tem direito a 1 (uma) rodada completa de ajustes simples (correções de texto, ajustes de corte, troca de trilha sonora). Alterações posteriores, refilmagem ou mudança completa de escopo não estão cobertas e poderão ser cobradas à parte.</p>
+          <p><strong>5. Propriedade Intelectual:</strong> O cliente mantém os direitos sobre sua imagem, concedendo à Owl Company o direito de uso para portfólio, salvo solicitação expressa em contrário por escrito.</p>
+          {/* CLÁUSULA DE PROTEÇÃO DE REEMBOLSO */}
+          <p><strong>6. Cancelamento e Reembolso:</strong> Por se tratar de um serviço que envolve reserva de agenda limitada e horas técnicas intelectuais, <strong>não realizamos reembolso integral após o início da fase de captação ou edição</strong>. Cancelamentos solicitados antes do início da produção estarão sujeitos a uma taxa administrativa de 20% (taxa de compromisso) para cobrir custos de reserva de agenda.</p>
         </div>
       )
     }
