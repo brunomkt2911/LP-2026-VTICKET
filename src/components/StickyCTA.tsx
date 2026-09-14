@@ -24,9 +24,9 @@ export default function StickyCTA() {
     if (typeof window !== 'undefined' && window.fbq) {
       // @ts-ignore
       window.fbq('track', 'Contact', {
-        content_name: 'Sticky CTA - Pack 10 Vídeos R$ 1240',
+        content_name: 'Sticky CTA - Pack 10 Vídeos R$ 699',
         currency: 'BRL',
-        value: 1240.00
+        value: 699.00
       });
     }
   };
@@ -42,7 +42,7 @@ export default function StickyCTA() {
         >
           <motion.a
             onClick={handleCTAClick}
-            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20pacote%20de%2010%20v%C3%ADdeos%20por%201240!"
+            href="https://wa.me/5511934354900?text=Ol%C3%A1!%20Quero%20saber%20mais%2520sobre%20o%20pacote%20de%2010%20v%C3%addeos%20por%20699!"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
@@ -50,7 +50,7 @@ export default function StickyCTA() {
             className="flex items-center justify-center gap-2 bg-primary text-white px-6 py-4 md:px-8 rounded-full text-base md:text-lg font-bold hover:bg-primary-hover transition-colors shadow-2xl shadow-primary/40 cursor-pointer pointer-events-auto w-full max-w-[400px] md:w-auto md:max-w-none"
           >
             <MessageCircle className="w-6 h-6" />
-            Garantir 10 Vídeos por R$ 1.240
+            Garantir 10 Vídeos por R$ 699
           </motion.a>
         </motion.div>
       )}
